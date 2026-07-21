@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f2f2f2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.card{
+    width:350px;
+    border-radius:20px;
+    overflow:hidden;
+    position:relative;
+    cursor:pointer;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+.card img{
+    width:100%;
+    display:block;
+    transition:.4s;
+}
+
+.card:hover img{
+    transform:scale(1.05);
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.4);
+
+    display:flex;
+    justify-content:center;
+    align-items:end;
+
+    padding:20px;
+
+    opacity:0;
+    transition:.3s;
+}
+
+.card:hover .overlay{
+    opacity:1;
+}
+
+.overlay a{
+    text-decoration:none;
+    color:#fff;
+    background:#e60023;
+    padding:12px 25px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+#modal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.8);
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+#modal img{
+    max-width:90%;
+    max-height:90%;
+    border-radius:15px;
+}
