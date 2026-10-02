@@ -3,26 +3,1400 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Single Image Gallery</title>
+
+    <title>Wisata Jatim | Jelajahi Destinasi Jawa Timur</title>
+    <meta name="description" content="Temukan destinasi, panduan perjalanan, dan inspirasi wisata terbaik di Jawa Timur.">
+    <link rel="icon" href="logo.png" type="image/png">
+
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<div class="gallery">
-    <div class="card">
-        <img src="lisa.png" alt="Foto">
+    <!-- NAVBAR -->
+    <header class="navbar">
 
-        <div class="overlay">
-            <a href="lisa.png" download>⬇ Download</a>
+        <!-- LOGO -->
+<a href="#beranda" class="logo">
+
+    <div class="logo-icon">
+        <img src="logo.png" alt="Logo Wisata Jatim">
+    </div>
+
+    <div class="logo-text">
+        <h2>Wisata Jatim</h2>
+        <span>Explore. Discover. Experience.</span>
+    </div>
+
+</a>
+
+
+        <!-- MENU -->
+        <nav class="nav-menu" id="navMenu" aria-label="Navigasi utama">
+  <a href="#beranda">Beranda</a>
+  <a href="#destinasi">Destinasi</a>
+  <a href="#wisata">Wisata</a>
+  <a href="#panduan">Panduan</a>
+  <a href="#panduan">Blog</a>
+  <a href="#tentang">Tentang Kami</a>
+</nav>
+
+
+        <!-- ACTION -->
+        <div class="nav-action">
+
+            <button class="nav-icon search-nav-button" type="button" aria-label="Cari destinasi">
+                🔍
+            </button>
+
+            <button class="nav-icon favorite-nav-button" type="button" aria-label="Tampilkan destinasi favorit" aria-pressed="false">
+                ♡
+            </button>
+
+            <button class="menu-button" type="button" aria-label="Menu" aria-controls="navMenu" aria-expanded="false">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+<!-- HERO SECTION -->
+<section class="hero" id="beranda">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <span class="hero-badge">
+            ✦ JELAJAH JAWA TIMUR
+        </span>
+
+        <h1>
+            Temukan Keindahan.
+            <span>Rasakan Petualangan.</span>
+        </h1>
+
+        <p>
+            Jelajahi pesona Jawa Timur, dari pegunungan yang menakjubkan
+            hingga pantai yang memukau.
+        </p>
+
+        <a href="#destinasi" class="hero-button">
+            Jelajahi Sekarang
+            <span>→</span>
+        </a>
+
+    </div>
+
+
+    <!-- SEARCH BOX -->
+    <div class="hero-search">
+
+        <div class="search-item">
+  <span class="search-icon">⌖</span>
+
+  <div class="search-field">
+    <small>Mau ke mana?</small>
+    <input type="search" id="searchDestination" placeholder="Pilih destinasi" aria-label="Cari berdasarkan nama destinasi atau lokasi">
+  </div>
+</div>
+
+
+        <div class="search-item">
+            <span class="search-icon">◷</span>
+
+            <div>
+                <small>Kategori</small>
+                <p>Semua wisata</p>
+            </div>
+        </div>
+
+
+        <div class="search-item">
+            <span class="search-icon">♧</span>
+
+            <div>
+                <small>Wilayah</small>
+                <p>Jawa Timur</p>
+            </div>
+        </div>
+
+
+        <button class="search-button">
+            Cari
+            <span>⌕</span>
+        </button>
+
+    </div>
+
+</section>
+<!-- KEUNGGULAN -->
+<section class="features">
+
+    <div class="feature-item">
+        <div class="feature-icon">
+            📍
+        </div>
+
+        <div class="feature-text">
+            <h3>Destinasi Pilihan</h3>
+            <p>
+                Temukan berbagai destinasi menarik
+                di seluruh Jawa Timur.
+            </p>
         </div>
     </div>
-</div>
 
-<div id="modal">
-    <img id="modalImg">
-</div>
 
-<script src="script.js"></script>
+    <div class="feature-item">
+        <div class="feature-icon">
+            🗺️
+        </div>
+
+        <div class="feature-text">
+            <h3>Informasi Lengkap</h3>
+            <p>
+                Informasi wisata yang membantu
+                perjalananmu lebih mudah.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="feature-item">
+        <div class="feature-icon">
+            ⭐
+        </div>
+
+        <div class="feature-text">
+            <h3>Rekomendasi Terbaik</h3>
+            <p>
+                Pilihan tempat wisata menarik
+                untuk berbagai jenis perjalanan.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="feature-item">
+        <div class="feature-icon">
+            🌿
+        </div>
+
+        <div class="feature-text">
+            <h3>Jelajah Lebih Mudah</h3>
+            <p>
+                Cari dan temukan tempat baru
+                dengan lebih praktis.
+            </p>
+        </div>
+    </div>
+
+</section>
+<!-- DESTINASI POPULER -->
+<section class="destinations" id="destinasi">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="section-label">DESTINASI PILIHAN</span>
+
+            <h2>
+                Jelajahi Destinasi
+                <span>Populer</span>
+            </h2>
+
+            <p>
+                Temukan tempat-tempat menarik di Jawa Timur
+                yang cocok untuk petualanganmu berikutnya.
+            </p>
+        </div>
+
+        <button class="view-all" id="showAllDestinations" type="button">
+            Lihat Semua
+            <span>→</span>
+        </button>
+
+    </div>
+
+
+    <!-- DESTINATION CARDS -->
+    <div class="destination-grid">
+
+        <!-- CARD 1 -->
+       <article class="destination-card" data-destination="bromo" data-category="gunung">
+
+            <div class="destination-image">
+                <img src="Gepind van kepguru.jpg" alt="Gunung Bromo">
+
+                <span class="destination-tag">
+                    Populer
+                </span>
+
+                <button class="favorite-button" type="button" aria-label="Tambahkan Gunung Bromo ke favorit" aria-pressed="false">
+                    ♡
+                </button>
+            </div>
+
+            <div class="destination-info">
+
+                <div class="destination-location">
+                    Jawa Timur
+                </div>
+
+                <h3>Gunung Bromo</h3>
+
+                <p>
+                    Nikmati keindahan sunrise dan
+                    lautan pasir di kawasan Bromo.
+                </p>
+
+                <div class="destination-bottom">
+
+                    <span class="rating">
+                        ★ 4.9
+                    </span>
+
+                    <button class="destination-detail-button" type="button" data-open-destination="bromo">
+                        Jelajahi →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- CARD 2 -->
+    <article class="destination-card" data-destination="ijen" data-category="gunung">
+
+            <div class="destination-image">
+                <img src="download.jpg" alt="Kawah Ijen">
+
+                <span class="destination-tag">
+                    Gunung
+                </span>
+
+                <button class="favorite-button" type="button" aria-label="Tambahkan Kawah Ijen ke favorit" aria-pressed="false">
+                    ♡
+                </button>
+            </div>
+
+            <div class="destination-info">
+
+                <div class="destination-location">
+                    Banyuwangi
+                </div>
+
+                <h3>Kawah Ijen</h3>
+
+                <p>
+                    Pesona kawah vulkanik dengan
+                    pemandangan alam yang unik.
+                </p>
+
+                <div class="destination-bottom">
+
+                    <span class="rating">
+                        ★ 4.8
+                    </span>
+
+                    <button class="destination-detail-button" type="button" data-open-destination="ijen">
+                        Jelajahi →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- CARD 3 -->
+        <article class="destination-card" data-destination="tumpak sewu" data-category="air-terjun">
+
+            <div class="destination-image">
+                <img src="Tumpak Sewu Waterfall (Lumajang, Indonesia).jpg" alt="Air Terjun Tumpak Sewu">
+
+                <span class="destination-tag">
+                    Air Terjun
+                </span>
+
+                <button class="favorite-button" type="button" aria-label="Tambahkan Tumpak Sewu ke favorit" aria-pressed="false">
+                    ♡
+                </button>
+            </div>
+
+            <div class="destination-info">
+
+                <div class="destination-location">
+                    Lumajang
+                </div>
+
+                <h3>Tumpak Sewu</h3>
+
+                <p>
+                    Air terjun megah yang dikelilingi
+                    panorama pegunungan hijau.
+                </p>
+
+                <div class="destination-bottom">
+
+                    <span class="rating">
+                        ★ 4.9
+                    </span>
+
+                    <button class="destination-detail-button" type="button" data-open-destination="tumpak sewu">
+                        Jelajahi →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- CARD 4 -->
+       <article class="destination-card" data-destination="papuma" data-category="pantai">
+
+            <div class="destination-image">
+                <img src="insp.jpg" alt="Pantai Papuma">
+
+                <span class="destination-tag">
+                    Pantai
+                </span>
+
+                <button class="favorite-button" type="button" aria-label="Tambahkan Pantai Papuma ke favorit" aria-pressed="false">
+                    ♡
+                </button>
+            </div>
+
+            <div class="destination-info">
+
+                <div class="destination-location">
+                    Jember
+                </div>
+
+                <h3>Pantai Papuma</h3>
+
+                <p>
+                    Pantai dengan pasir putih dan
+                    panorama laut yang menawan.
+                </p>
+
+                <div class="destination-bottom">
+
+                    <span class="rating">
+                        ★ 4.8
+                    </span>
+
+                    <button class="destination-detail-button" type="button" data-open-destination="papuma">
+                        Jelajahi →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+    <p class="destination-status" id="destinationStatus" role="status" aria-live="polite" hidden></p>
+
+</section>
+<!-- KATEGORI WISATA -->
+<section class="categories" id="wisata">
+
+    <div class="section-heading category-heading">
+
+        <div>
+            <span class="section-label">JELAJAH SESUAI MINAT</span>
+
+            <h2>
+                Pilih Jenis
+                <span>Wisata</span>
+            </h2>
+
+            <p>
+                Temukan pengalaman yang sesuai dengan
+                gaya perjalananmu.
+            </p>
+        </div>
+
+        <button class="view-all" id="resetCategoryFilter" type="button">
+            Semua Kategori
+            <span>→</span>
+        </button>
+
+    </div>
+
+
+    <div class="category-grid">
+
+        <!-- GUNUNG -->
+        <div class="category-card filter-category" data-filter="gunung" role="button" tabindex="0" aria-pressed="false">
+
+            <img src="gunung1.jpg" alt="Wisata Gunung">
+
+            <div class="category-overlay"></div>
+
+            <div class="category-content">
+                <span>01</span>
+                <h3>Gunung</h3>
+                <p>Petualangan & panorama alam</p>
+            </div>
+
+        </div>
+
+
+        <!-- PANTAI -->
+        <div class="category-card filter-category" data-filter="pantai" role="button" tabindex="0" aria-pressed="false">
+
+            <img src="insp.jpg" alt="Wisata Pantai">
+
+            <div class="category-overlay"></div>
+
+            <div class="category-content">
+                <span>02</span>
+                <h3>Pantai</h3>
+                <p>Pasir putih & laut yang indah</p>
+            </div>
+
+        </div>
+
+
+        <!-- AIR TERJUN -->
+        <div class="category-card filter-category" data-filter="air-terjun" role="button" tabindex="0" aria-pressed="false">
+
+            <img src="Tumpak Sewu Waterfall (Lumajang, Indonesia).jpg" alt="Wisata Air Terjun">
+
+            <div class="category-overlay"></div>
+
+            <div class="category-content">
+                <span>03</span>
+                <h3>Air Terjun</h3>
+                <p>Segarnya alam Jawa Timur</p>
+            </div>
+
+        </div>
+
+
+        <!-- BUDAYA -->
+        <div class="category-card filter-category" data-filter="budaya" role="button" tabindex="0" aria-pressed="false">
+
+            <img src="budaya.jpg" alt="Wisata Budaya">
+
+            <div class="category-overlay"></div>
+
+            <div class="category-content">
+                <span>04</span>
+                <h3>Budaya</h3>
+                <p>Tradisi & warisan Nusantara</p>
+            </div>
+
+        </div>
+
+
+        <!-- KULINER -->
+        <div class="category-card filter-category" data-filter="kuliner" role="button" tabindex="0" aria-pressed="false">
+
+            <img src="kuliner.jpg" alt="Kuliner Jawa Timur">
+
+            <div class="category-overlay"></div>
+
+            <div class="category-content">
+                <span>05</span>
+                <h3>Kuliner</h3>
+                <p>Rasa khas Jawa Timur</p>
+            </div>
+
+        </div>
+
+
+        <!-- KELUARGA -->
+        <div class="category-card filter-category" data-filter="keluarga" role="button" tabindex="0" aria-pressed="false">
+
+            <img src="Holiday.jpg" alt="Wisata Keluarga">
+
+            <div class="category-overlay"></div>
+
+            <div class="category-content">
+                <span>06</span>
+                <h3>Keluarga</h3>
+                <p>Liburan seru bersama keluarga</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ARTIKEL & PANDUAN -->
+<section class="articles" id="panduan">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="section-label">INSPIRASI PERJALANAN</span>
+
+            <h2>
+                Artikel &
+                <span>Panduan</span>
+            </h2>
+
+            <p>
+                Temukan tips, rekomendasi, dan inspirasi
+                untuk perjalananmu di Jawa Timur.
+            </p>
+        </div>
+
+        <a href="#article-list" class="view-all">
+            Lihat Semua
+            <span>→</span>
+        </a>
+
+    </div>
+
+
+    <div class="article-grid" id="article-list">
+
+        <!-- ARTIKEL 1 -->
+        <article class="article-card">
+
+            <div class="article-image">
+                <img src="bromo2.jpg" alt="Panduan wisata Bromo">
+
+                <span class="article-category">
+                    Panduan
+                </span>
+            </div>
+
+            <div class="article-content">
+
+                <div class="article-meta">
+                    <span>📅 5 Menit Baca</span>
+                </div>
+
+                <h3>
+                    Panduan Lengkap Liburan ke Gunung Bromo
+                </h3>
+
+                <p>
+                    Tips dan informasi penting yang perlu kamu
+                    ketahui sebelum menjelajahi Bromo.
+                </p>
+
+                <button class="read-more" type="button" data-open-article>
+                    Baca Selengkapnya
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- ARTIKEL 2 -->
+        <article class="article-card">
+
+            <div class="article-image">
+                <img src="download.jpg" alt="Panduan wisata Kawah Ijen">
+
+                <span class="article-category">
+                    Wisata Alam
+                </span>
+            </div>
+
+            <div class="article-content">
+
+                <div class="article-meta">
+                    <span>📅 6 Menit Baca</span>
+                </div>
+
+                <h3>
+                    Menjelajahi Keindahan Kawah Ijen
+                </h3>
+
+                <p>
+                    Kenali daya tarik Kawah Ijen dan persiapkan
+                    perjalananmu dengan lebih baik.
+                </p>
+
+                <button class="read-more" type="button" data-open-article>
+                    Baca Selengkapnya
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- ARTIKEL 3 -->
+        <article class="article-card">
+
+            <div class="article-image">
+                <img src="kuliner.jpg" alt="Kuliner Jawa Timur">
+
+                <span class="article-category">
+                    Kuliner
+                </span>
+            </div>
+
+            <div class="article-content">
+
+                <div class="article-meta">
+                    <span>📅 4 Menit Baca</span>
+                </div>
+
+                <h3>
+                    7 Kuliner Khas Jawa Timur yang Wajib Dicoba
+                </h3>
+
+                <p>
+                    Dari makanan tradisional hingga kuliner populer,
+                    temukan cita rasa khas Jawa Timur.
+                </p>
+
+                <button class="read-more" type="button" data-open-article>
+                    Baca Selengkapnya
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+<!-- FEATURED DESTINATION -->
+<section class="featured">
+
+    <div class="featured-image">
+        <img src="hd (1).jpg" alt="Gunung Bromo">
+    </div>
+
+    <div class="featured-overlay"></div>
+
+    <div class="featured-content">
+
+        <span class="featured-label">
+            ✦ DESTINASI PILIHAN
+        </span>
+
+        <h2>
+            Rasakan Magisnya
+            <span>Gunung Bromo</span>
+        </h2>
+
+        <p>
+            Saksikan matahari terbit yang memukau dan nikmati
+            panorama pegunungan yang menjadi salah satu ikon
+            Jawa Timur.
+        </p>
+
+        <div class="featured-info">
+
+            <div>
+                <strong>📍</strong>
+                <span>Probolinggo</span>
+            </div>
+
+            <div>
+                <strong>⭐</strong>
+                <span>4.9 / 5</span>
+            </div>
+
+        </div>
+
+        <button class="featured-button" type="button" data-open-destination="bromo">
+            Jelajahi Destinasi
+            <span>→</span>
+        </button>
+
+    </div>
+
+</section>
+<!-- STATISTIK -->
+<section class="statistics">
+
+    <div class="statistics-heading">
+
+        <span class="section-label">JAWA TIMUR DALAM ANGKA</span>
+
+        <h2>
+            Jelajahi Lebih Banyak,
+            <span>Temukan Lebih Banyak.</span>
+        </h2>
+
+        <p>
+            Temukan berbagai destinasi dan pengalaman menarik
+            yang tersebar di seluruh Jawa Timur.
+        </p>
+
+    </div>
+
+
+    <div class="statistics-grid">
+
+        <!-- DESTINASI -->
+        <div class="stat-item">
+
+            <div class="stat-icon">
+                📍
+            </div>
+
+            <div class="stat-number">
+                100<span>+</span>
+            </div>
+
+            <h3>Jumlah Destinasi</h3>
+
+            <p>
+                Tempat wisata pilihan
+            </p>
+
+        </div>
+
+
+        <!-- KABUPATEN / KOTA -->
+        <div class="stat-item">
+
+            <div class="stat-icon">
+                🗺️
+            </div>
+
+            <div class="stat-number">
+                38
+            </div>
+
+            <h3>Kabupaten / Kota</h3>
+
+            <p>
+                Di seluruh Jawa Timur
+            </p>
+
+        </div>
+
+
+        <!-- PENGUNJUNG -->
+        <div class="stat-item">
+
+            <div class="stat-icon">
+                👥
+            </div>
+
+            <div class="stat-number">
+                50K<span>+</span>
+            </div>
+
+            <h3>Pengunjung</h3>
+
+            <p>
+                Menjelajahi website kami
+            </p>
+
+        </div>
+
+
+        <!-- RATING -->
+        <div class="stat-item">
+
+            <div class="stat-icon">
+                ⭐
+            </div>
+
+            <div class="stat-number">
+                4.9
+            </div>
+
+            <h3>Rating</h3>
+
+            <p>
+                Kepuasan pengguna
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- FOOTER -->
+<footer class="footer" id="tentang">
+
+    <div class="footer-container">
+
+        <!-- TENTANG -->
+        <div class="footer-column footer-about">
+
+          <a href="#beranda" class="footer-logo">
+
+    <div class="logo-icon">
+        <img src="logo.png" alt="Logo Wisata Jatim">
+    </div>
+
+    <div>
+        <h2>Wisata Jatim</h2>
+        <span>Explore. Discover. Experience.</span>
+    </div>
+
+</a>
+            <p>
+                Temukan keindahan Jawa Timur dan berbagai
+                destinasi menarik untuk perjalananmu.
+            </p>
+
+            <div class="footer-social">
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">FB</a>
+                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok">TK</a>
+            </div>
+
+        </div>
+
+
+        <!-- NAVIGASI -->
+        <div class="footer-column">
+
+            <h3>Navigasi</h3>
+
+            <a href="#beranda">Beranda</a>
+            <a href="#destinasi">Destinasi</a>
+            <a href="#wisata">Wisata</a>
+            <a href="#panduan">Panduan</a>
+            <a href="#panduan">Blog</a>
+            <a href="#tentang">Tentang Kami</a>
+
+        </div>
+
+
+        <!-- DESTINASI -->
+        <div class="footer-column">
+
+            <h3>Destinasi</h3>
+
+            <a href="#destinasi" data-open-destination="bromo">Gunung Bromo</a>
+            <a href="#destinasi" data-open-destination="ijen">Kawah Ijen</a>
+            <a href="#destinasi" data-open-destination="tumpak sewu">Tumpak Sewu</a>
+            <a href="#destinasi" data-open-destination="papuma">Pantai Papuma</a>
+            <a href="#destinasi" data-search-destination="Malang">Malang</a>
+            <a href="#destinasi" data-search-destination="Banyuwangi">Banyuwangi</a>
+
+        </div>
+
+
+        <!-- KONTAK -->
+        <div class="footer-column footer-contact">
+
+            <h3>Kontak</h3>
+
+            <p>
+                📍 Jawa Timur, Indonesia
+            </p>
+
+            <p>✉️ <a href="mailto:hello@jelajahjatim.id">hello@jelajahjatim.id</a></p>
+
+            <p>☎️ <a href="tel:+6281234567890">+62 812 3456 7890</a></p>
+
+            <p>
+                🕐 Senin - Minggu
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- COPYRIGHT -->
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 <strong>Wisata Jatim</strong>.
+            Semua hak dilindungi.
+        </p>
+
+        <div>
+            <button class="legal-link" type="button" data-open-legal="privacy">Privacy Policy</button>
+            <button class="legal-link" type="button" data-open-legal="terms">Terms &amp; Conditions</button>
+        </div>
+
+    </div>
+
+</footer>
+
+<dialog class="detail-dialog" id="detailDialog" aria-labelledby="detailTitle">
+        <div class="detail-dialog-panel">
+                <button class="detail-dialog-close" type="button" aria-label="Tutup detail">×</button>
+                <img class="detail-dialog-image" id="detailImage" alt="">
+                <div class="detail-dialog-body">
+                        <span class="detail-dialog-category" id="detailCategory"></span>
+                        <h2 id="detailTitle"></h2>
+                        <div class="detail-dialog-meta" id="detailMeta">
+                                <span id="detailLocation"></span>
+                                <span id="detailRating"></span>
+                        </div>
+                        <p id="detailDescription"></p>
+                        <section class="detail-dialog-tips">
+                                <h3 id="detailTipsHeading">Tips Perjalanan</h3>
+                                <p id="detailTips"></p>
+                        </section>
+                </div>
+        </div>
+</dialog>
+
+<script>
+const menuButton = document.querySelector(".menu-button");
+const navMenu = document.querySelector(".nav-menu");
+const navLinks = document.querySelectorAll(".nav-menu a");
+
+function setMenuOpen(isOpen) {
+    navMenu.classList.toggle("active", isOpen);
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+}
+
+menuButton.addEventListener("click", function () {
+    setMenuOpen(!navMenu.classList.contains("active"));
+});
+
+navLinks.forEach(function (link) {
+    link.addEventListener("click", function () {
+        setMenuOpen(false);
+    });
+});
+
+document.addEventListener("click", function (event) {
+    if (navMenu.classList.contains("active") && !event.target.closest(".navbar")) {
+        setMenuOpen(false);
+    }
+});
+
+const searchInput = document.querySelector("#searchDestination");
+const searchButton = document.querySelector(".search-button");
+const searchNavButton = document.querySelector(".search-nav-button");
+const favoriteFilterButton = document.querySelector(".favorite-nav-button");
+const destinationCards = Array.from(document.querySelectorAll(".destination-card"));
+const filterCategories = Array.from(document.querySelectorAll(".filter-category"));
+const destinationStatus = document.querySelector("#destinationStatus");
+const favoriteButtons = Array.from(document.querySelectorAll(".favorite-button"));
+
+let selectedCategory = "";
+let searchQuery = "";
+let favoritesOnly = false;
+
+function getFavoriteKey(index) {
+    return "favorite-" + index;
+}
+
+function isFavoriteSaved(index) {
+    try {
+        return localStorage.getItem(getFavoriteKey(index)) === "true";
+    } catch (error) {
+        return false;
+    }
+}
+
+function saveFavorite(index, isFavorite) {
+    try {
+        if (isFavorite) {
+            localStorage.setItem(getFavoriteKey(index), "true");
+        } else {
+            localStorage.removeItem(getFavoriteKey(index));
+        }
+    } catch (error) {
+        destinationStatus.hidden = false;
+        destinationStatus.textContent = "Favorit tersimpan hanya selama halaman ini terbuka.";
+    }
+}
+
+function updateCategoryButtons() {
+    filterCategories.forEach(function (category) {
+        category.setAttribute("aria-pressed", String(category.dataset.filter === selectedCategory));
+    });
+}
+
+function updateDestinationCards() {
+    let visibleCount = 0;
+
+    destinationCards.forEach(function (card) {
+        const cardName = card.querySelector("h3").textContent.trim().toLowerCase();
+        const location = card.querySelector(".destination-location").textContent.trim().toLowerCase();
+        const slug = card.dataset.destination.toLowerCase();
+        const cardIndex = destinationCards.indexOf(card);
+        const matchesCategory = !selectedCategory || card.dataset.category === selectedCategory;
+        const matchesSearch = !searchQuery || cardName.includes(searchQuery) || location.includes(searchQuery) || slug.includes(searchQuery);
+        const matchesFavorite = !favoritesOnly || favoriteButtons[cardIndex].classList.contains("active");
+        const isVisible = matchesCategory && matchesSearch && matchesFavorite;
+
+        card.hidden = !isVisible;
+        if (isVisible) visibleCount += 1;
+    });
+
+    const isFiltered = Boolean(selectedCategory || searchQuery || favoritesOnly);
+    destinationStatus.hidden = !isFiltered;
+
+    if (!isFiltered) return;
+
+    if (visibleCount === 0) {
+        if (searchQuery) {
+            destinationStatus.textContent = 'Destinasi "' + searchInput.value.trim() + '" belum ditemukan. Coba nama atau lokasi lain.';
+        } else if (favoritesOnly) {
+            destinationStatus.textContent = "Belum ada destinasi favorit. Tekan ikon hati pada kartu untuk menyimpannya.";
+        } else {
+            const activeCategory = filterCategories.find(function (category) {
+                return category.dataset.filter === selectedCategory;
+            });
+            const categoryName = activeCategory ? activeCategory.querySelector("h3").textContent.trim() : selectedCategory;
+            destinationStatus.textContent = "Belum ada destinasi kategori " + categoryName + ". Destinasi akan muncul saat tersedia.";
+        }
+        return;
+    }
+
+    destinationStatus.textContent = "Menampilkan " + visibleCount + " destinasi.";
+}
+
+function resetDestinationFilters() {
+    selectedCategory = "";
+    searchQuery = "";
+    favoritesOnly = false;
+    searchInput.value = "";
+    favoriteFilterButton.setAttribute("aria-pressed", "false");
+    updateCategoryButtons();
+    updateDestinationCards();
+}
+
+function selectCategory(category) {
+    selectedCategory = category;
+    searchQuery = "";
+    favoritesOnly = false;
+    searchInput.value = "";
+    favoriteFilterButton.setAttribute("aria-pressed", "false");
+    updateCategoryButtons();
+    updateDestinationCards();
+    document.querySelector("#destinasi").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+filterCategories.forEach(function (category) {
+    category.addEventListener("click", function () {
+        selectCategory(category.dataset.filter);
+    });
+
+    category.addEventListener("keydown", function (event) {
+        if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            category.click();
+        }
+    });
+});
+
+function runDestinationSearch() {
+    searchQuery = searchInput.value.trim().toLowerCase();
+    selectedCategory = "";
+    favoritesOnly = false;
+    favoriteFilterButton.setAttribute("aria-pressed", "false");
+    updateCategoryButtons();
+
+    if (!searchQuery) {
+        updateDestinationCards();
+        destinationStatus.hidden = false;
+        destinationStatus.textContent = "Masukkan nama destinasi atau lokasi untuk mulai mencari.";
+        searchInput.focus();
+        return;
+    }
+
+    updateDestinationCards();
+    const firstMatch = destinationCards.find(function (card) {
+        return !card.hidden;
+    });
+
+    if (firstMatch) {
+        firstMatch.classList.remove("search-highlight");
+        void firstMatch.offsetWidth;
+        firstMatch.classList.add("search-highlight");
+        firstMatch.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+}
+
+searchButton.addEventListener("click", runDestinationSearch);
+searchInput.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") runDestinationSearch();
+});
+
+searchNavButton.addEventListener("click", function () {
+    searchInput.scrollIntoView({ behavior: "smooth", block: "center" });
+    searchInput.focus({ preventScroll: true });
+});
+
+favoriteButtons.forEach(function (button, index) {
+    const cardName = destinationCards[index].querySelector("h3").textContent.trim();
+    const isFavorite = isFavoriteSaved(index);
+    button.classList.toggle("active", isFavorite);
+    button.setAttribute("aria-pressed", String(isFavorite));
+    button.setAttribute("aria-label", (isFavorite ? "Hapus " : "Tambahkan ") + cardName + " " + (isFavorite ? "dari" : "ke") + " favorit");
+    button.textContent = isFavorite ? "♥" : "♡";
+
+    button.addEventListener("click", function () {
+        const nextFavoriteState = !button.classList.contains("active");
+        button.classList.toggle("active", nextFavoriteState);
+        button.setAttribute("aria-pressed", String(nextFavoriteState));
+        button.setAttribute("aria-label", (nextFavoriteState ? "Hapus " : "Tambahkan ") + cardName + " " + (nextFavoriteState ? "dari" : "ke") + " favorit");
+        button.textContent = nextFavoriteState ? "♥" : "♡";
+        button.classList.remove("favorite-pop");
+        void button.offsetWidth;
+        button.classList.add("favorite-pop");
+        window.setTimeout(function () {
+            button.classList.remove("favorite-pop");
+        }, 360);
+        saveFavorite(index, nextFavoriteState);
+        updateDestinationCards();
+    });
+});
+
+favoriteFilterButton.addEventListener("click", function () {
+    favoritesOnly = !favoritesOnly;
+    selectedCategory = "";
+    searchQuery = "";
+    searchInput.value = "";
+    favoriteFilterButton.setAttribute("aria-pressed", String(favoritesOnly));
+    updateCategoryButtons();
+    updateDestinationCards();
+    document.querySelector("#destinasi").scrollIntoView({ behavior: "smooth", block: "start" });
+});
+
+document.querySelector("#showAllDestinations").addEventListener("click", function () {
+    resetDestinationFilters();
+});
+
+document.querySelector("#resetCategoryFilter").addEventListener("click", function () {
+    resetDestinationFilters();
+    document.querySelector("#destinasi").scrollIntoView({ behavior: "smooth", block: "start" });
+});
+
+const detailDialog = document.querySelector("#detailDialog");
+const detailDialogPanel = document.querySelector(".detail-dialog-panel");
+const detailImage = document.querySelector("#detailImage");
+const detailCategory = document.querySelector("#detailCategory");
+const detailTitle = document.querySelector("#detailTitle");
+const detailLocation = document.querySelector("#detailLocation");
+const detailRating = document.querySelector("#detailRating");
+const detailMeta = document.querySelector("#detailMeta");
+const detailDescription = document.querySelector("#detailDescription");
+const detailTipsHeading = document.querySelector("#detailTipsHeading");
+const detailTips = document.querySelector("#detailTips");
+const destinationTips = {
+    gunung: "Bawa pakaian hangat, cek cuaca dan kondisi jalur, serta mulai perjalanan lebih awal.",
+    pantai: "Gunakan pelindung matahari, bawa air minum, dan ikuti arahan keselamatan pantai.",
+    "air-terjun": "Pilih alas kaki dengan cengkeraman baik dan hindari jalur licin saat hujan.",
+    budaya: "Hormati adat setempat dan tanyakan izin sebelum memotret kegiatan atau warga.",
+    kuliner: "Cek jam operasional dan tanyakan bahan makanan jika memiliki pantangan atau alergi.",
+    keluarga: "Siapkan kebutuhan anak, cek fasilitas yang tersedia, dan sepakati titik berkumpul."
+};
+
+function openDestinationDetails(destinationKey) {
+    const card = destinationCards.find(function (item) {
+        return item.dataset.destination === destinationKey;
+    });
+    if (!card) return;
+
+    const image = card.querySelector(".destination-image img");
+    detailImage.hidden = false;
+    detailDialogPanel.classList.remove("is-text-only");
+    detailMeta.hidden = false;
+    detailImage.src = image.src;
+    detailImage.alt = image.alt;
+    detailCategory.textContent = card.querySelector(".destination-tag").textContent.trim();
+    detailTitle.textContent = card.querySelector("h3").textContent.trim();
+    detailLocation.textContent = "📍 " + card.querySelector(".destination-location").textContent.trim();
+    detailRating.textContent = card.querySelector(".rating").textContent.trim();
+    detailRating.hidden = false;
+    detailDescription.textContent = card.querySelector(".destination-info p").textContent.trim();
+    detailTipsHeading.textContent = "Tips Perjalanan";
+    detailTips.textContent = destinationTips[card.dataset.category] || "Periksa informasi terbaru sebelum berangkat dan jaga kebersihan di lokasi.";
+    detailDialog.showModal();
+}
+
+document.querySelectorAll("[data-open-destination]").forEach(function (trigger) {
+    trigger.addEventListener("click", function (event) {
+        event.preventDefault();
+        openDestinationDetails(trigger.dataset.openDestination);
+    });
+});
+
+const articleTips = [
+    "Berangkat sebelum matahari terbit, bawa pakaian hangat, dan siapkan masker untuk area berdebu.",
+    "Periksa kondisi jalur dan cuaca, gunakan perlengkapan yang sesuai, serta ikuti petunjuk keselamatan setempat.",
+    "Mulai dari porsi kecil saat mencoba hidangan baru dan tanyakan tingkat kepedasan atau bahan yang digunakan."
+];
+
+document.querySelectorAll("[data-open-article]").forEach(function (button, index) {
+    button.addEventListener("click", function () {
+        const article = button.closest(".article-card");
+        const image = article.querySelector(".article-image img");
+        detailImage.hidden = false;
+        detailDialogPanel.classList.remove("is-text-only");
+        detailMeta.hidden = false;
+        detailImage.src = image.src;
+        detailImage.alt = image.alt;
+        detailCategory.textContent = article.querySelector(".article-category").textContent.trim();
+        detailTitle.textContent = article.querySelector("h3").textContent.trim();
+        detailLocation.textContent = article.querySelector(".article-meta").textContent.trim();
+        detailRating.hidden = true;
+        detailDescription.textContent = article.querySelector(".article-content p").textContent.trim();
+        detailTipsHeading.textContent = "Catatan bacaan";
+        detailTips.textContent = articleTips[index] || "Rencanakan perjalanan dengan memperhatikan kondisi dan aturan setempat.";
+        detailDialog.showModal();
+    });
+});
+
+document.querySelectorAll("[data-search-destination]").forEach(function (link) {
+    link.addEventListener("click", function () {
+        searchInput.value = link.dataset.searchDestination;
+        runDestinationSearch();
+    });
+});
+
+const legalNotices = {
+    privacy: {
+        title: "Kebijakan Privasi",
+        description: "Wisata Jatim adalah website informasi statis. Pencarian berjalan di browser dan tidak dikirim ke server.",
+        details: "Pilihan favorit disimpan di localStorage pada perangkat ini. Website ini tidak menyediakan akun atau mengumpulkan data pribadi melalui formulir. Menghapus data situs di browser akan menghapus favorit tersimpan."
+    },
+    terms: {
+        title: "Syarat dan Ketentuan",
+        description: "Informasi destinasi dan tips di website ini disediakan sebagai referensi perjalanan.",
+        details: "Jam buka, harga, cuaca, akses, dan kondisi keselamatan dapat berubah. Pastikan memeriksa informasi terbaru dari pengelola atau otoritas setempat sebelum berangkat. Website ini tidak memproses reservasi atau transaksi."
+    }
+};
+
+document.querySelectorAll("[data-open-legal]").forEach(function (button) {
+    button.addEventListener("click", function () {
+        const notice = legalNotices[button.dataset.openLegal];
+        if (!notice) return;
+
+        detailImage.hidden = true;
+        detailDialogPanel.classList.add("is-text-only");
+        detailCategory.textContent = "Informasi";
+        detailTitle.textContent = notice.title;
+        detailMeta.hidden = true;
+        detailDescription.textContent = notice.description;
+        detailTipsHeading.textContent = "Keterangan";
+        detailTips.textContent = notice.details;
+        detailDialog.showModal();
+    });
+});
+
+function closeDetailDialog() {
+    if (!detailDialog.open || detailDialog.classList.contains("is-closing")) return;
+
+    detailDialog.classList.add("is-closing");
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    window.setTimeout(function () {
+        if (detailDialog.open) detailDialog.close();
+        detailDialog.classList.remove("is-closing");
+    }, reducedMotion ? 0 : 180);
+}
+
+document.querySelector(".detail-dialog-close").addEventListener("click", closeDetailDialog);
+
+detailDialog.addEventListener("click", function (event) {
+    if (event.target === detailDialog) closeDetailDialog();
+});
+
+detailDialog.addEventListener("cancel", function (event) {
+    event.preventDefault();
+    closeDetailDialog();
+});
+
+detailDialog.addEventListener("close", function () {
+    detailDialog.classList.remove("is-closing");
+});
+
+updateDestinationCards();
+
+let scrollRevealObserver;
+
+function initializeMotion() {
+    const revealSections = Array.from(document.querySelectorAll(
+        ".features, .destinations, .categories, .articles, .featured, .statistics, .footer"
+    ));
+    const revealCards = Array.from(document.querySelectorAll(
+        ".destination-card, .category-card, .article-card"
+    ));
+    const revealTargets = revealSections.concat(revealCards);
+
+    revealTargets.forEach(function (element) {
+        element.classList.add("scroll-reveal");
+    });
+
+    document.querySelectorAll(".destination-grid, .category-grid, .article-grid").forEach(function (grid) {
+        Array.from(grid.children).forEach(function (card, index) {
+            card.classList.add("stagger-item");
+            card.style.setProperty("--stagger-delay", Math.min(index, 4) * 85 + "ms");
+        });
+    });
+
+    document.body.classList.add("motion-ready");
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (reducedMotion) {
+        revealTargets.forEach(function (element) {
+            element.classList.add("is-visible");
+        });
+        return;
+    }
+
+    document.body.classList.add("page-enter");
+    window.setTimeout(function () {
+        document.body.classList.remove("page-enter");
+    }, 1300);
+
+    if (!("IntersectionObserver" in window)) {
+        revealTargets.forEach(function (element) {
+            element.classList.add("is-visible");
+        });
+        return;
+    }
+
+    scrollRevealObserver = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+        });
+    }, {
+        threshold: 0.08,
+        rootMargin: "0px 0px -35px 0px"
+    });
+
+    revealTargets.forEach(function (element) {
+        scrollRevealObserver.observe(element);
+    });
+
+    function revealCurrentViewport() {
+        const viewportHeight = window.innerHeight;
+        revealTargets.forEach(function (element) {
+            const bounds = element.getBoundingClientRect();
+            if (bounds.top < viewportHeight && bounds.bottom > 0) {
+                element.classList.add("is-visible");
+            }
+        });
+    }
+
+    revealCurrentViewport();
+    document.addEventListener("visibilitychange", revealCurrentViewport);
+}
+
+initializeMotion();
+</script>
+
 
 </body>
 </html>
